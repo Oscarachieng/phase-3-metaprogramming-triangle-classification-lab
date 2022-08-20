@@ -16,12 +16,7 @@ class Triangle
     elsif  @side1 != @side2 and @side1 != @side3 and @side2 != @side3
         :scalene
     else 
-      begin 
-        raise TriangleError 
-      rescue TriangleError => error
-        puts error.message
-
-      end
+      raise TriangleError
     end  
   end
 
